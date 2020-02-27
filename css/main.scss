@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+@import 'normalize';
+@import 'default';
+@import 'variables';
+@import 'header';
+@import "./hamburgers/hamburgers.scss";
+
+.main {
+    margin: 30px auto;
+    max-width: 90%;
+    position: relative;
+
+    &__container {
+        background: url(../img/lompoc.png) no-repeat;
+        background-position-y: 65%;
+        background-size: 100% 160%;
+        border-radius: 25px;
+        padding: 25px 30px;
+        margin: 0 auto;
+        min-height: 500px;
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    &__title {
+        color: $white;
+        font-size: 6em;
+    }
+    &__tagContainer {
+        margin: 0 auto;
+        align-self: center;
+    }
+    &__tagline {
+        color: $white;
+        font-size: 3em;
+        border-bottom: 5px solid $white;
+        margin: 0 auto 50px;
+    }
+}
